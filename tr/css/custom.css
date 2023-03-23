@@ -1,0 +1,265 @@
+
+body {
+
+	height: 100vh;
+	width: 100vw;
+	background-color: #072227;
+
+}
+
+
+
+.vw-100 {
+
+	height: 100vh;
+	width: 100vw;
+
+}
+
+.game {
+
+
+	background-color: #35858B;
+	height: 498px;
+	width: 498px;
+	padding: 0;
+	flex-wrap: wrap;
+	border-radius: 10px;
+
+}
+
+.main {
+
+	height: 100vh;
+	width: 100%;
+
+}
+
+.box {
+
+	border: 1px solid #AEFEFF;
+	width: 83px;
+	height: 83px;
+	border-radius: 10px;
+
+}
+
+#car {
+
+	width: 83px;
+	height: 83px;
+	position: fixed;
+	z-index: 10;
+	transform: rotate(45deg);
+	transition: top 500ms linear, left 500ms linear;
+
+}
+
+.road {
+
+	width: 83px;
+	height: 83px;
+	position: fixed;
+
+}
+
+.wall {
+
+	width: 83px;
+	height: 83px;
+	position: fixed;
+	z-index: 0;
+
+}
+
+.finish {
+
+	width: 83px;
+	height: 83px;
+	position: fixed;
+	z-index: 0;
+	
+}
+
+.code-blocks {
+
+	width: 40vw;
+	height: 70vh;
+	border-radius: 20px;
+
+}
+
+.codes {
+
+	width: 30%;
+	height: 100%;
+	background: #4FBDBA;
+	border-radius: 20px 0 0 20px;
+	flex-direction: column;
+
+}
+
+.workspace {
+
+	width: 70%;
+	height: 100%;
+	border-radius: 0 20px 20px 0;
+	background-color: #AEFEFF;
+
+}
+
+.code {
+
+	background-color: #fff;
+	text-align: center;
+	font-family: poppins, sans-serif;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+
+}
+
+.w-code {
+
+	background-color: #fff;
+	text-align: center;
+	font-family: poppins, sans-serif;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+
+}
+
+.bi-trash3 {
+
+	border-radius: 5px;
+
+}
+
+.codes-header {
+
+	background: #35858B !important;
+	border-radius: 20px 0 0 0;
+	font-family: poppins, sans-serif;
+	font-weight: 600;
+
+}
+
+.workspace-header {
+
+	background: #35858B !important;
+	border-radius: 0 20px 0 0;
+	font-family: poppins, sans-serif;
+	font-weight: 600;
+
+}
+
+.bi {
+
+	font-size: 20px;
+
+}
+
+.blocks {
+	
+	height: 93%;
+
+}
+
+.block-left {
+
+	color: #072227;
+
+}
+
+.w-blocks {
+	
+	height: 85%;
+	overflow-y: scroll;
+
+}
+
+.w-blocks {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.w-blocks::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.btn-run {
+
+	height: 7%;
+	font-family: poppins, sans-serif;
+	font-weight: 600;
+
+}
+
+.level-header {
+
+
+}
+
+.level-col {
+
+	border-radius: 20px;
+	height: 70vh;
+	color: #fff;
+	background: #35858B;
+
+}
+
+.licon {
+
+	font-size: 50px;
+	color: #fff;
+
+}
+
+.bi-1-circle-fill::before {
+
+	content: '\2460';
+
+}
+
+.circled-number {
+
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	background-color: #fff;
+
+}
+
+.levels {
+
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.flags {
+
+	margin: auto;
+	background: #35858B;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	border-radius: 10px;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+
+}
+
+.flag {
+
+	display: block;
+	width: 30px;
+	margin: 7px;
+
+}

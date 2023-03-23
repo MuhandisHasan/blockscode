@@ -1,0 +1,43 @@
+// Super variables
+
+var ran = false;
+
+
+// Blocks codes Functions
+
+var code = document.querySelectorAll(".code");
+
+	var i = 0;
+
+    while(i < code.length){
+
+	    code[i].addEventListener('click', function (e) {
+
+	        addCode(e.currentTarget.id);
+
+	    });
+
+    	i++;
+    }
+
+// Execute codes
+
+const run = document.querySelector("#btn-run");
+
+	run.addEventListener('click', function (e) {
+
+		if (!ran == true) {
+
+			console.log("running");
+			runCode(readCode());
+
+			ran = true;
+
+		}else{
+
+			location.reload();
+
+		}
+
+	});
+

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blocks Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <script src="js/jquery.js"></script>
+
+    <div class="container-fluid vw-100">
+      <div class="row main d-flex align-items-center justify-content-center">
+        <div class="col-md-7 game d-flex" id="game">
+          <img src="assets/car.png" id="car"> 
+          <script src="js/level.js"></script>
+           
+
+          <script>
+
+            var i = 1;
+
+            while (i < 37) {
+
+              document.write('<div class="box" id="b'+i+'"></div>');
+
+              i++;
+
+            }
+
+          </script>
+
+
+        </div>
+        <div class="col-md-4 code-blocks d-flex">
+          <div class="codes d-flex">
+            <h4 class="text-center bg-primary text-light p-2 codes-header">Blocks</h4>
+            <div class="blocks">
+              <div class="code" id="up"><i class="bi bi-arrow-up"></i></div>
+              <div class="code" id="down"><i class="bi bi-arrow-down"></i></div>
+              <div class="code" id="right"><i class="bi bi-arrow-right"></i></div>
+              <div class="code" id="left"><i class="bi bi-arrow-left"></i></div>
+              <div class="code" id="loop">Loop</div>
+              <div class="code" id="end-loop">End Loop</div>
+              <div class="d-flex" id="block-left-con">
+                <script>
+                  // Con for container
+                  document.getElementById('block-left-con').innerHTML = '<h6 class="m-auto block-left" data-use="'+blockAmount+'" id="block-left">'+blockAmount+' Usable blocks left</h6>';
+
+                </script>
+              </div>
+            </div>
+            <button class="p-2 m-2 d-flex align-items-center justify-content-center btn btn-danger btn-run" id="btn-delete"><i class="bi bi-trash"></i><span>Delete</span></button>
+            <button class="p-2 m-2 d-flex align-items-center justify-content-center btn btn-primary btn-run" id="btn-run"><i class="bi bi-play-fill"></i><span>Run</span></button>           
+          </div>
+          <div class="workspace">
+            <h4 class="text-center bg-primary text-light p-2 workspace-header">Workspace</h4>
+            <!-- W for Workspace -->
+            <div class="w-blocks" id="w-blocks">
+            </div>
+            <!-- List code in text form to be readed in functions.js 209 -->
+            <p class="d-none" id="code-list">
+              
+            </p>
+          </div>
+        </div>
+        <div class="col-md-1 text-center level-col">
+          <div class="levels">
+            <ul class="nav flex-column text-light">
+              <li class="nav-item">
+                <a class="nav-link active" href="?id=1"><i class="bi bi-1-square licon"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="?id=2"><i class="bi bi-2-square licon"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="?id=3"><i class="bi bi-3-square licon"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="?id=4"><i class="bi bi-4-square licon"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="?id=5"><i class="bi bi-5-square licon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flags">
+      <a href="../en" class="flag">
+        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 512 512">
+          <path fill="#012169" d="M0 0h512v512H0z"/>
+          <path fill="#FFF" d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z"/>
+          <path fill="#C8102E" d="m184 324 11 34L42 512H0v-3l184-185zm124-12 54 8 150 147v45L308 312zM512 0 320 196l-4-44L466 0h46zM0 1l193 189-59-8L0 49V1z"/>
+          <path fill="#FFF" d="M176 0v512h160V0H176zM0 176v160h512V176H0z"/>
+          <path fill="#C8102E" d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z"/>
+        </svg>
+      </a>
+      <a href="../tr" class="flag">
+        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-tr" viewBox="0 0 512 512">
+          <g fill-rule="evenodd">
+            <path fill="#e30a17" d="M0 0h512v512H0z"/>
+            <path fill="#fff" d="M348.8 264c0 70.6-58.3 127.9-130.1 127.9s-130.1-57.3-130.1-128 58.2-127.8 130-127.8S348.9 193.3 348.9 264z"/>
+            <path fill="#e30a17" d="M355.3 264c0 56.5-46.6 102.3-104.1 102.3s-104-45.8-104-102.3 46.5-102.3 104-102.3 104 45.8 104 102.3z"/>
+            <path fill="#fff" d="m374.1 204.2-1 47.3-44.2 12 43.5 15.5-1 43.3 28.3-33.8 42.9 14.8-24.8-36.3 30.2-36.1-46.4 12.8-27.5-39.5z"/>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <script src="js/swal.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/codes.js"></script>
+    <script>
+      
+      $(document).ready(function(){
+
+        // ====== These are first thing to do when the page is loaded ======
+
+        // Initializing Global Variable 
+
+        // (Current Position)
+        var curPosition;
+        // Collisons list
+        var collisons = [];
+
+        // ============== Setup The Objects ==============
+        // Get a collison position
+        const wall = document.getElementsByClassName("wall");
+
+        // pos stands for position
+         
+        var i = 0;
+          
+        while (i<wall.length)
+        {
+
+          collisons.push(wall[i].dataset.pos);
+
+          i++;
+
+        }
+
+        // Get A Starting Point Of a Car
+        const startpoint = document.getElementById("startpoint");
+        const facing = document.getElementById("facing");
+
+        var position = parseInt(startpoint.textContent);
+
+        // Placing all Objects (Car,Walls,Roads)
+
+        placeObjects(position,facing.textContent);
+
+        // Updating current position variable
+
+        curPosition = parseInt(placeObjects(position));
+
+
+
+
+
+        // These are things to do when user interact with keyboard
+
+        document.addEventListener('keydown', (e) => {
+
+        // Get the pressed key
+
+        var key = e.keyCode;
+
+        // Check the key and moving car 
+
+        if (key == 174) {
+
+          if (curPosition < 6) {
+            car.src = 'assets/explosion.gif';
+            car.style.transform = 'rotate('+0+'deg)';
+            setTimeout(function(){location.reload()},1200);
+          }else{
+            curPosition = moveUp(curPosition,collisons);
+          }
+
+        }else if(key == 122){
+
+          if (curPosition > 30) {
+            car.src = 'assets/explosion.gif';
+            car.style.transform = 'rotate('+0+'deg)';
+            setTimeout(function(){location.reload()},1200);
+          }else{
+            curPosition = moveDown(curPosition,collisons);
+          }
+
+        }else if(key == 119){
+
+          let position = getPosition(document.getElementById("b"+curPosition)).left;
+          let limit = getPosition(document.getElementById("b6")).left
+
+          if (position == limit) {
+            car.src = 'assets/explosion.gif';
+            car.style.transform = 'rotate('+0+'deg)';
+            setTimeout(function(){location.reload()},1200);
+          }else{
+            curPosition = moveRight(curPosition,collisons);
+          }
+          
+        }else if(key == 117){
+
+          let position = getPosition(document.getElementById("b"+curPosition)).left;
+          let limit = getPosition(document.getElementById("b1")).left
+
+          if (position == limit) {
+            car.src = 'assets/explosion.gif';
+            car.style.transform = 'rotate('+0+'deg)';
+            setTimeout(function(){location.reload()},1200);
+          }else{
+            curPosition = moveLeft(curPosition,collisons);
+          }
+          
+        }else{
+
+
+
+        }
+
+        });
+
+      });
+
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
