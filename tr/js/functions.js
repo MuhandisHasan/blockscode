@@ -276,8 +276,8 @@ function addCode(id) {
 			workSpace.innerHTML += '<div class="code">'+times+' defa tekrarlayacak</div>';
 			loopState = times;
 			usableLeft--;
-			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Usable Blocks Left</h6>';
-
+			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Kullanabilecek Blok</h6>';
+			
 		}
 
 	}else if(id == "end-loop"){
@@ -306,7 +306,7 @@ function addCode(id) {
 		loopCodeList = [];
 		loopState = 1;
 		usableLeft--;
-		blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Usable Blocks Left</h6>';
+		blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Kullanabilecek Blok</h6>';
 
 	}else{
 
@@ -315,7 +315,7 @@ function addCode(id) {
 			workSpace.innerHTML += '<div class="w-code"><i class="bi bi-arrow-'+id+'"></i></div>';
 
 			usableLeft--;
-			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Usable Blocks Left</h6>';
+			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Kullanabilecek Blok</h6>';
 
 			loopCodeList.push(id);
 
@@ -334,7 +334,7 @@ function addCode(id) {
 		}else{
 
 			usableLeft--;
-			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Usable Blocks Left</h6>';
+			blockLeftCon.innerHTML = '<h6 class="m-auto block-left" data-use="'+usableLeft+'" id="block-left">'+usableLeft+' Kullanabilecek Blok</h6>';
 
 			workSpace.innerHTML += '<div class="w-code"><i class="bi bi-arrow-'+id+'"></i></div>';
 			codeList.innerText += "-"+id;

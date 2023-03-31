@@ -1,7 +1,3 @@
-// Super variables
-
-var ran = false;
-
 
 // Blocks codes Functions
 
@@ -20,24 +16,4 @@ var code = document.querySelectorAll(".code");
     	i++;
     }
 
-// Execute codes
-
-const run = document.querySelector("#btn-run");
-
-	run.addEventListener('click', function (e) {
-
-		if (!ran == true) {
-
-			console.log("running");
-			runCode(readCode());
-
-			ran = true;
-
-		}else{
-
-			location.reload();
-
-		}
-
-	});
 

@@ -154,13 +154,34 @@
 
         // Placing all Objects (Car,Walls,Roads)
 
-        placeObjects(position,facing.textContent);
-
         // Updating current position variable
 
-        curPosition = parseInt(placeObjects(position));
+        curPosition = parseInt(placeObjects(position,facing.textContent));
 
+        // ====== Function When Run Button Clicked
 
+        // Execute codes
+
+        var ran = false;
+
+        const run = document.querySelector("#btn-run");
+
+        run.addEventListener('click', function (e) {
+
+          if (!ran == true) {
+
+            runCode(readCode());
+
+            ran = true;
+
+          }else{
+
+            curPosition = parseInt(placeObjects(position,facing.textContent));
+            runCode(readCode());
+
+          }
+
+        });
 
 
 

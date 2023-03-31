@@ -74,9 +74,6 @@ function placeObjects(position,facing)
 
 	let blockId = "b"+position;
 
-	console.log(facing);
-
-
 	if (facing == "up") {
 		car.style.transform = 'rotate('+90+'deg)';
 	}else if (facing == "down") {
